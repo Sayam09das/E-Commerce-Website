@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.product-details {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+.product-details h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+.product-details p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+.price {
+    font-size: 1.8rem;
+    color: #f9004d;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.form-group label {
+    font-weight: bold;
+    margin-top: 15px;
+}
+.quantity-selector {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.add-to-cart-btn {
+    background-color: #f9004d;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.add-to-cart-btn:hover {
+    background-color: #d9003b;
+    transform: scale(1.05);
+}
+
+/* Custom styling for carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #f9004d;
+    opacity: 1;
+    transform: scale(1.1);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.carousel-control-prev-icon::before {
+    content: '←';
+}
+.carousel-control-next-icon::before {
+    content: '→';
+}
+.carousel-indicators li {
+    background-color: #f9004d;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background-color: #d9003b;
+}
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 35px;
+        height: 35px;
+    }
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+        font-size: 1rem;
+    }
+}
